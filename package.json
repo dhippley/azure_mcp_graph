@@ -1,0 +1,38 @@
+{
+  "name": "azure_mcp_graph",
+  "version": "1.0.0",
+  "description": "Azure Topology Graph MCP Server - Query Azure resources and build topology maps",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node src/server.ts",
+    "clean": "rm -rf dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhippley/azure_mcp_graph.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dhippley/azure_mcp_graph/issues"
+  },
+  "homepage": "https://github.com/dhippley/azure_mcp_graph#readme",
+  "dependencies": {
+    "@azure/arm-network": "^34.0.0",
+    "@azure/arm-resourcegraph": "^4.2.1",
+    "@azure/identity": "^4.11.1",
+    "@modelcontextprotocol/sdk": "^1.17.3",
+    "dotenv": "^17.2.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
